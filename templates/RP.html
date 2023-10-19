@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<center>
+<div class="d-flex">
+  <form action="/upload" method="POST" enctype="multipart/form-data">
+      <label>Nombre del profucto</label><br>
+      <input type="text" name="namep"><br>
+      <label>Categoria</label>><br>
+      <input type="text" name = "categoriap"></label><br>
+      <label>Descripcion</label>><br>
+      <input type="text" name="descripcion"> <br>
+      <input type="file" value="foto del producto" name="file"><br>
+
+      <input type="submit" value="Enviar">
+  </form>
+    {% if result != None %}
+
+      <img src="./static/archivos/{{ result }}"
+      {{ do_something }}
+{% endif %}
+    </div>
+    </center>
+</body>
+
+</html>

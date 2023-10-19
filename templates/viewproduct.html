@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>producto</title>
+</head>
+<body>
+{% if result != None %}
+  <img src="{{result[0]}}">
+   <p>{{result[1]}}</p><br>
+   <p>{{result[2]}}</p><br>
+    <input type="submit" value="agregar al carro"><br>
+      {{ do_something }}
+{% endif %}
+</body>
+</html>
